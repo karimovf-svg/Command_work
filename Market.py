@@ -1,15 +1,13 @@
-"""Muhammadaziz"""
+"""Azamat"""
+from mahsulotlar import tavarlar
+
+
 class Market:
-    def __init__(self,title,baza,balans):
-        self.title=title
-        self.baza=baza
-        self.balans=balans
+    def __init__(self, title, balance):
+        self.title = title
+        self.baza = []
+        self.balance = balance
 
-    def balans_data(self):
-        if self.balans >= 0:
-            print(f"Market nomi: {self.title}\n Balans: {self.balans}$")
-        else:
-            print("Market balansida muammo bor, balans manfiy!")
 
-market = Market("Uzum", None, 0)
-
+market = Market("Uzum Market",10000)
+market.baza.append(tavarlar)

@@ -1,14 +1,17 @@
+"""Azamat"""
 class User:
-    def __init__(self,phone,carta,password,is_admin,is_client):
-        self.phone= phone
-        self.carta= carta
-        self.korzinka= []
-        self.password= password
-        self.admin= is_admin
-        self.client= is_client
+    def __init__(self, phone, card, korzina, is_admin, is_client, password):
+        self.phone = phone
+        self.card = card
+        self.korzina = []
+        self.is_admin = is_admin
+        self.as_client = is_client
+        self.password = password
 
-user1 = User("+998902040737", 4023561498601122, 1111,False,True)
-user2 = User("+998902020582", 4023561498602222, 2222,False,True)
-user3 = User("+998889931022", 4023561498603322, 3333,False,True)
-user4 = User("+998999069999", 4023561498604422, 4444,False,True)
-user5 = User("+998999060582",9999,7777,True,False)
+user_1 = User(+998900199921, 8600130963070000, None, False, True, 4455)
+user_2 = User(+998900199922, 8600130963070001, None, False, True, 4456)
+user_3 = User(+998900199923, 8600130963070002, None, False, True, 4457)
+user_4 = User(+998900199924, 8600130963070003, None, False, True, 4458)
+user_5 = User(+998900199925, 8600130963070004, None, True, False, 4459)
+
+users = [user_1, user_2, user_3, user_4, user_5]
